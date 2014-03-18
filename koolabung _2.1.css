@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!--[if lt IE 7]> 
+<script language="JavaScript"> 
+function correctpng() // correctly handle png transparency in Win IE 5.5 & 6. 
+{ 
+var arVersion = navigator.appVersion.split("MSIE") 
+var version = parseFloat(arVersion[1]) 
+if ((version >= 5.5) && (document.body.filters)) 
+{ 
+for(var i=0; i<document.images.length; i++) 
+{ 
+var img = document.images[i] 
+var imgName = img.src.toUpperCase() 
+if (imgName.substring(imgName.length-3, imgName.length) == "png") 
+{ 
+var imgID = (img.id)? "id='" + img.id + "' " : "" 
+var imgClass = (img.className)? "class='" + img.className + "' " : "" 
+var imgTitle = (img.title)? "title='" + img.title + "' " : "title='" + img.alt + "' " 
+var imgStyle = "display:inline-block;" + img.style.cssText 
+if (img.align == "left") imgStyle = "float:left;" + imgStyle 
+if (img.align == "right") imgStyle = "float:right;" + imgStyle 
+if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle 
+var strNewHTML = "<span " + imgID + imgClass + imgTitle 
++ " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";" 
++ "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader" 
++ "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+img.outerHTML = strNewHTML 
+i = i-1 
+} 
+} 
+} 
+} 
+window.attachEvent("onload", correctpng); 
+</script> 
+<![endif]--> 
+
+
+
+
+.style1 {
+	font-family: Eurostile;
+	color: #FF0000;
+	font-size: 36px;
+}
+.style2 {
+	font-family: Eurostile;
+	font-size: 16px;
+	font-weight: normal;
+}
+.style3 {
+	font-family:  eurostile;
+	color:  #FF0000;
+	font-size:  24px;
+	}
+.ripples_button {
+	width:  404px;
+	height:  417px;
+	cursor:  pointer;
+	vertical-align: middle;
+	z-index: 1;
+	}
+.hand {
+	cursor:  pointer;
+	}
+
+
+
+Untitled-2
+
+.about {
+	font-family:  "AvantGarde Bk BT";
+	font-size:  14pt;
+	}
+.x-ray_text {
+	cursor:  pointer;
+	
+	}
+	
+.prawn_text {
+	cursor:  pointer;
+	
+	}
+
+.cod_text {
+	cursor:  pointer;
+	
+	
+	}
+	
+.cicada_text {
+	cursor:  pointer;
+	
+	}
+.mirror_cell {background-repeat:no-repeat}	
+	
+COD INFO
+
+.c_style1	{
+		font-size:  24px;
+		font-family:  Verdana, Arial, Helvetica, sans-serif;
+		font-weight:  bold;
+		color:  #;
+		}
+		
+.c_style2	{
+		font-size:  14px;
+		font-family:  Verdana, Arial, Helvetica, sans-serif;
+		font-weight:  bold;
+		color:  #;
+		margin-left:  10px;
+		margin-right:  10px;
+		}
+.c_style3  {
+		  font-family: Arial, Helvetica, sans-serif; 
+		  font-weight: bold; 
+		  font-size: small; 
+		  }
+.c_style6 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+.c_style7 {color: #FF0000}
+.c_style9 {
+	font-size: 36px;
+	font-family: Eurostile;
+	font-weight: bold;
+	color: #333333;
+}
+.c_style10 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+X-RAY INFO
+
+.x_style4 {
+	font-family: Eurostile;
+	}
+	
+CICADA
+
+.cfstyle2 {
+	font-family: eurostyle;
+	}
+	.cfstyle2 strong {
+	font-family: Eurostile;
+}

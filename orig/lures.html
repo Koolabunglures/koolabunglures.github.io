@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>
+</title>
+
+<link href="main_style.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+<!--
+
+textarea.infoTextStyle {
+
+	border: 0px;
+	background-color: ffffcc;
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #000000;
+	text-align: left;
+
+}
+
+-->
+</style>
+
+
+
+<script language="Javascript">
+//<!--
+
+var lureName = new Array();
+var lureInfo = new Array();
+
+lureName[1] = "Cupped Face Popper";
+lureName[2] = "Fizz Wizz";
+lureName[3] = "(Super) Livebait";
+lureName[4] = "Rack Raiders";
+lureName[5] = "Popper (Rack Raiders)";
+lureName[6] = "Ridgebacks";
+lureName[7] = "Softies";
+lureName[8] = "Razorback";
+lureName[9] = "Paddlers";
+
+
+lureInfo[1] = "Lure Name:	Cupped Face Popper\n\nLure Type:		Surface Lure\n\nSizes:		50mm Softie Diving Depth 0m\n		50mm Timber Diving Depth 0m\n\nColours:		5 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Bass\n		Bream\n		\n\nOther Species\nTargeted:		Barramundi\n		Mangrove Jack\n		Trevally\n\nEddie's Lure Tip:	Use slow popping pausing action.";
+lureInfo[2] = "Lure Name:	Fizz Wizz\n\nLure Type:		Surface Lure\n\nSizes:		50mm Diving Depth 0m\n		70mm Diving Depth 0m\n\nColours:		5 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Bass\n		Bream\n\nOther Species\nTargeted:		Barramundi\n		Mangrove Jack\n		Sarratoga\n\nEddie's Lure Tip:	Use sharp pulling action\n		with frequent stops.";
+lureInfo[3] = "Lure Name:	(Super) Livebait\n\nLure Type:		Diving Lure\n\nSizes:		65mm Diving Depth 3m\n		80mm Diving Depth 4m\n		100mm Diving Depth 4m\n		100mm Diving Depth 6m\n\nColours:		10 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Barramundi\n		Mangrove Jack\nOther Species\nTargeted:		Bass\n		Cod\n		Yellowbelly\n\nEddie's Lure Tips:	These lures work well in both salt\n		and fresh water.";
+lureInfo[4] = "Lure Name:	Rack Raiders\n\nLure Type:		Diving Lure\n\nSizes:		40mm Diving Depth 2m\n		40mm Diving Depth 3m\n\nColours:		10 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Bream\n\nOther Species\nTargeted:		Bass\n		Flathead\n\nEddie's Lure Tip:	Cast close to structure and\n		retreive at a medium pace.";
+lureInfo[5] = "Lure Name:	Popper (Rack Raiders)\n\nLure Type:		Diving Lure\n\nSizes:		40mm Diving Depth 2m\n		40mm Diving Depth 3m\n\nColours:		10 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Bream\n\nOther Species\nTargeted:		Bass\n		Flathead\n\nEddie's Lure Tip:	Ideal for bream and small bass.";
+lureInfo[6] = "Lure Name:	Ridgeback\n\nLure Type:		Diving Lure\n\nSizes:		50mm Diving Depth 4m\n		80mm Diving Depth 6m\n\nColours:		10 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Cod\n		Yellowbelly\n\nOther Species\nTargeted:		Barramundi\n		Bass\n		Flathead\n\nEddie's Lure Tip:	Keep retrieve troll speeds slow.";
+lureInfo[7] = "Lure Name:	Softies\n\nLure Type:		Diving Lure\n\nSizes:		50mm Diving Depth 3m\n		50mm Diving Depth 5m\n\nColours:		10 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Bass\n		Yellowbelly\n\nOther Species\nTargeted:		Flathead\n\nEddie's Lure Tip:	Cast close to structure and\n		retreive at a medium pace.";
+lureInfo[8] = "Lure Name:	Razorback\n\nLure Type:		Diving Lure\n\nSizes:		65mm Diving Depth 2m\n		80mm Diving Depth 5m\n		100mm Diving Depth 5m\n\nColours:		10 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Barramundi\n		Mangrove Jack\n\nOther Species\nTargeted:		Bass\n		Flathead\n		Trevally\n\nEddie's Lure Tip:	Cast close to structure and\n		retreive at a medium pace.";
+lureInfo[9] = "Lure Name:	Paddlers\n\nLure Type:		Surface Lure\n\nSizes:		40mm Diving Depth 0m\n		50mm Diving Depth 0m\n		70mm Diving Depth 0m\n		120mm Diving Depth 0m\n\nColours:		5 Colours\n		For full colour range see Colours\n		page\n\nMain Species\nTargeted:		Bass\n		Bream\n		Cod\n\nOther Species\nTargeted:		Mangrove Jack\n		Trevally\n\nEddie's Lure Tip:	Cast and leave sit 20 seconds,\n		walk the surface and leave\n		20 seconds.";
+
+
+function changeInformation(currentlureNum) {
+
+	lurePic.src = "gfx/lure" + currentlureNum + ".jpg";
+	captionBox.value = lureName[currentlureNum];
+	lureInfoArea.value = lureInfo[currentlureNum] 
+}
+
+//-->
+</script>
+
+</head>
+<body onLoad="changeInformation(1)">
+
+<table width=100% border=0 align="center" class="defaultText" cellpadding=0 cellspacing=5>
+	<tr>
+		<td align="right" valign="top" width=30 rowspan=3>
+
+<img src="gfx/icon_info.gif">
+
+		</td>
+		<td align="left" valign="top" colspan=2>
+
+      <div class="headingText">Lure Type Information</div>
+Select a Lure from the drop down menu.<br>
+<br>
+      <br>
+<br>
+
+		</td>
+		<td align="center" valign="top" nowrap>
+
+      <div class="specialText">Lure Type</div>
+
+<select id="lureSelectBox" onChange="changeInformation(lureSelectBox.value)">
+        <option value="1">Cupped Faced Popper</option>
+        <option value="2">Fizz Wizz</option>
+        <option value="3">Livebait</option>
+        <option value="4">Rack Raiders</option>
+        <option value="5">Popper (Rack Raiders)</option>
+        <option value="6">Ridgebacks</option>
+        <option value="7">Softies</option>
+        <option value="8">Razorbacks</option>
+        <option value="9">Paddlers</option>
+      </select>
+
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="middle" colspan=2 width=33%>
+
+
+
+<table border=0 cellpadding=0 cellspacing=0 width=20>
+	<tr>
+		<td>
+			<img id="lurePic" height=150 class="bordered"></td>
+
+		<td valign="top" class="rightPhotoShadow">
+			<img src="gfx/photo_shadow_top_right.gif">
+		</td>
+	</tr>
+	<tr>
+		<td align="left" class="bottomPhotoShadow">
+			<img src="gfx/photo_shadow_bottom_left.gif">
+		</td>
+		<td>
+			<img src="gfx/photo_shadow_bottom_right.gif">
+		</td>
+	</tr>
+	<tr>
+		<td align="center" valign="top" colspan=3 width=100%>
+			<input type="text" size=20 readonly id="captionBox" class="captionBoxStyle">
+		</td>
+	</tr>
+</table>
+
+
+
+		</td>
+		<td align="left" valign="middle">
+
+      <textarea id="lureInfoArea" cols=55 rows=17 class="infoTextStyle" readonly></textarea>
+
+		</td>
+	</tr>
+	<tr>
+    <td class="defaultText" align="right" valign="bottom" colspan=3 height="30" bgcolor="#773388"> 
+      <!-- URL's used in the movie-->
+      <!-- text used in the movie-->
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ width=40 height=40>
+        <param name=movie value="rainbow.swf">
+        <param name=quality value=high>
+        <param name=bgcolor value=#783488>
+        <embed src="rainbow.swf" quality=high bgcolor=#783488  width=40 height=40 type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+        </embed> 
+      </object> </td>
+	</tr>  
+</table>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<html>
+<head>
+<title> Koolabung Lures *</title>
+
+
+</head>
+<frameset rows="115, *" border=0>
+  <frame name="head" src="head.html" scrolling="no" noresize>
+  <frameset cols="129, *" border=0>
+    <frame name="left" src="nav.html" scrolling="no" noresize>
+    <frame name="main" src="splash.html" scrolling="yes" noresize>
+  </frameset>
+</frameset>
+<noframes>
+</noframes>
+</html>

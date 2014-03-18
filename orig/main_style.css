@@ -1,0 +1,132 @@
+body {
+	background-color: #ffffcc;
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: normal;
+	color: #000000;
+}
+
+.defaultText {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #000000;
+}
+
+.headingText {
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #cc0000;
+}
+
+.subHeadingText {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #cc0000;
+}
+
+.specialText {
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #773388;
+}
+
+input.captionBoxStyle {
+
+	border: 0px solid #000000;
+	background-color: ffffcc;
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #773388;
+	text-align: center;
+
+}
+
+input.captionBoxStyle2 {
+
+	font-weight: bold;
+	font-size: 10pt;
+	border: 0px solid #000000;
+	background-color: ffffcc;
+	font-family: Verdana;
+	color: #773388;
+	text-align: center;
+
+}
+
+input {
+
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+
+}
+
+select {
+
+	font-family: Verdana;
+	font-size: 10pt;
+	color: #000000;
+
+}
+
+.rightPhotoShadow {
+
+	background-image: url(gfx/photo_shadow_right.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+
+}
+
+.bottomPhotoShadow {
+
+	background-image: url(gfx/photo_shadow_bottom.gif);
+	background-repeat: repeat-x;
+	background-position: top left;
+	
+}
+
+.handCursorStyle {
+
+	cursor: hand;
+
+}
+
+image.bordered {
+
+	border: 0px solid #000000;
+
+}
+
+.tableHeadingBg {
+	background-color: #ffdd88;
+}
+
+.tableBg {
+	background-color: #ffeeaa;
+}
+
+a:link {
+	color: #aa0000;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #aa0000;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #aa0000;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #aa0000;
+	text-decoration: underline;
+}
+

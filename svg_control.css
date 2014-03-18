@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {height:100%;}
+body {height:100%; margin:0; padding:0;}
+#bg {position:fixed; top:0; left:0; width:100%; height:100%;}
+
+
+#COL2 {
+	position:relative;
+	padding-left:14%;
+	top:2%;
+	overflow:;
+	width:80%;
+	z-index:2;
+	}
+#rangBUTT {position:absolute; width:17%; left:40%; bottom:9%; z-index:9;}
+#colourbutton {position:absolute; z-index:9; width:100%;}
+
+/* x-ray */
+#xrp45 {padding-left:18%; cursor:pointer;}
+#xrb40 {cursor:pointer;	padding-right: 1%;}
+#xrb60 {cursor:pointer;	padding-left: 5%;}
+
+
+/* barra */
+#prawn {padding-left:18%; cursor:pointer;}
+#live  {cursor:pointer;}
+#bony  {padding-left:5%; cursor:pointer;}
+
+/* cod */
+#zilla {padding-left:14%; cursor:pointer;}
+#walk  {cursor:pointer; padding-left:8%}
+#bait  { cursor:pointer; padding-left:3%;}
+#blade {cursor:pointer;}
+
+/* surface */
+#basswalker {padding-left:24%; cursor:pointer;}
+#cicada  {padding-right:25%; cursor:pointer;}
+
+#foot  {position:absolute; width:7%; left:45%; bottom:1%; z-index:9;}
+
+#dodge {position:absolute; z-index:1; left: 42%; top: 40%;}
+
+
+#opera {position:absolute; z-index:6; width:80%; bottom:6%; left:2.5%;
+}
