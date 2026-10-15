@@ -69,9 +69,15 @@ a:hover { color: var(--purple); }
 .hero .wrap {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  align-items: center;
-  gap: 3rem;
+  grid-template-rows: 1fr auto auto auto 1fr;
+  column-gap: 3rem;
 }
+
+.hero .wrap > * { grid-column: 1; }
+.hero .eyebrow { grid-row: 2; }
+.hero h1 { grid-row: 3; }
+.hero .lead { grid-row: 4; }
+.hero .oval { grid-column: 2; grid-row: 1 / -1; align-self: center; }
 
 .eyebrow {
   margin: 0 0 1rem;
@@ -313,10 +319,15 @@ h1 em, h2 em { color: var(--red); }
   .craft .wrap { grid-template-columns: 1fr; }
 
   .hero { padding-top: 1rem; }
-  .hero .wrap { gap: 0; }
-  .hero .wrap > div { display: contents; }
-  .hero .oval { order: 1; width: 94%; max-width: 28rem; justify-self: center; margin: 1rem 0 2.5rem; }
-  .hero .lead { order: 2; }
+  .hero .wrap { display: flow-root; }
+  .hero .oval {
+    float: right;
+    width: 48%;
+    margin: 0.4rem 0.4rem 0.5rem 1.25rem;
+    shape-outside: ellipse(50% 50%);
+    shape-margin: 0.75rem;
+  }
+  .hero .lead { font-size: 1.125rem; }
   .site-header nav { display: none; }
   :root { --logo: 13rem; }
 }
