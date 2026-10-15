@@ -328,6 +328,23 @@ h1 em, h2 em { color: var(--red); }
     shape-margin: 0.75rem;
   }
   .hero .lead { font-size: 1.125rem; }
+
+  .hero { padding-bottom: 3rem; }
+  h1 { font-size: 2.25rem; margin-bottom: 1.25rem; }
+  .hero .oval { width: 44%; }
+
+  .story, .craft, .catches, .find { padding-block: 3.5rem; }
+  .story .wrap, .craft .wrap { gap: 2rem; }
+  .story .oval { max-width: 15rem; }
+  .pull { margin: 0.5rem 0; font-size: 1.4rem; }
+
+  .craft .lure { width: 60%; padding: 1.25rem; }
+
+  .catches h2 { margin-bottom: 1.5rem; }
+  .grid { grid-template-columns: 1fr 1fr; gap: 1.25rem 0.75rem; }
+  .grid figcaption { font-size: 0.8rem; margin-top: 0.4rem; }
+
+  .site-footer { font-size: 1.05rem; padding-block: 2rem; }
   .site-header nav { display: none; }
   :root { --logo: 13rem; }
 }
