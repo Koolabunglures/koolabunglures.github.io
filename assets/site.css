@@ -313,7 +313,10 @@ h1 em, h2 em { color: var(--red); }
   .craft .wrap { grid-template-columns: 1fr; }
 
   .hero { padding-top: 1rem; }
-  .hero .oval { max-width: 28rem; justify-self: center; grid-row: 1; }
+  .hero .wrap { gap: 0; }
+  .hero .wrap > div { display: contents; }
+  .hero .oval { order: 1; width: 94%; max-width: 28rem; justify-self: center; margin: 1rem 0 2.5rem; }
+  .hero .lead { order: 2; }
   .site-header nav { display: none; }
   :root { --logo: 13rem; }
 }
