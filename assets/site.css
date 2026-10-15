@@ -273,22 +273,18 @@ h1 em, h2 em { color: var(--red); }
 /* Footer */
 
 .site-footer {
-  padding-block: 2rem;
+  padding-block: 3rem;
   background: var(--cream);
   border-top: 1px solid var(--cream-deep);
-  font-size: 0.95rem;
-  color: var(--ink-soft);
-}
-
-.site-footer .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--purple);
 }
 
 .site-footer p { margin: 0; }
+
+.site-footer .sep { margin-inline: 0.6em; color: var(--pink); }
 
 .fb {
   display: inline-block;
@@ -302,12 +298,6 @@ h1 em, h2 em { color: var(--red); }
 }
 
 .fb:hover { background: var(--purple-deep); color: #fff; }
-
-.tagline {
-  font-family: var(--display);
-  font-style: italic;
-  color: var(--purple);
-}
 
 @media (max-width: 52rem) {
   .hero .wrap,
