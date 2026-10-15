@@ -275,8 +275,11 @@ h1 em, h2 em { color: var(--red); }
 
 .site-footer h2 { margin: 0 0 0.75rem; font-size: 1.75rem; }
 
+.note { margin: 0 0 0.75rem; max-width: var(--measure); }
+
 .fb {
   display: inline-block;
+  margin-top: 0.75rem;
   padding: 0.6rem 1.25rem;
   border-radius: 999px;
   background: var(--purple);
