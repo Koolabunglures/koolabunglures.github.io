@@ -284,7 +284,14 @@ h1 em, h2 em { color: var(--red); }
 
 .site-footer p { margin: 0; }
 
-.site-footer .sep { margin-inline: 0.6em; color: var(--pink); }
+.site-footer .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 2rem;
+}
+
+.site-footer img { width: 9rem; }
 
 .fb {
   display: inline-block;
