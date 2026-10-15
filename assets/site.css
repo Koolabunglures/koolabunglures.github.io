@@ -273,19 +273,22 @@ h1 em, h2 em { color: var(--red); }
 /* Footer */
 
 .site-footer {
-  padding-block: 4rem;
-  background: var(--cream-deep);
+  padding-block: 2rem;
+  background: var(--cream);
+  border-top: 1px solid var(--cream-deep);
+  font-size: 0.95rem;
+  color: var(--ink-soft);
 }
 
 .site-footer .wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: end;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
-
+.site-footer p { margin: 0; }
 
 .fb {
   display: inline-block;
@@ -301,10 +304,8 @@ h1 em, h2 em { color: var(--red); }
 .fb:hover { background: var(--purple-deep); color: #fff; }
 
 .tagline {
-  margin: 0;
   font-family: var(--display);
   font-style: italic;
-  font-size: 1.5rem;
   color: var(--purple);
 }
 
