@@ -16,7 +16,8 @@
 <header class="site-header">
   <div class="wrap">
     <a href="./"><img src="assets/img/logo.svg" alt="Koolabung Lures"></a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span></span></button>
+    <nav id="site-nav">
       <a href="#story">History</a>
       <a href="#lures">The lures</a>
       <a href="#catches">Catches</a>
@@ -42,29 +43,31 @@
     <div class="wrap">
       <h2>The history of <em>Koolabung Lures</em></h2>
 
-      <div>
-        <p>My first introduction to lure fishing came on the banks of the mighty Macleay, targeting Bass just 4km above Kempsey in Northern NSW. Spinning Bass intrigued me enough and quickly I moved on to other quarries in saltwater such as flathead.</p>
-        <p>In 1970 my thirst for other targets was soon quenched when a good friend from Sydney drew my attention to the art of luring bream. Bream spinning was seen as something of a stunt in those days, a by-catch of a flathead session, but these days has become the norm with B.R.E.A.M. series comps targeting these species by lure only means.</p>
+      <div class="pair">
+        <figure class="oval">
+          <div class="frame"><img src="assets/img/eddie.gif" width="250" height="176" alt="Eddie Studman holding a fish"></div>
+          <figcaption>Eddie Studman</figcaption>
+        </figure>
+        <div class="text">
+          <p>My first introduction to lure fishing came on the banks of the mighty Macleay, targeting Bass just 4km above Kempsey in Northern NSW. Spinning Bass intrigued me enough and quickly I moved on to other quarries in saltwater such as flathead.</p>
+          <p>In 1970 my thirst for other targets was soon quenched when a good friend from Sydney drew my attention to the art of luring bream. Bream spinning was seen as something of a stunt in those days, a by-catch of a flathead session, but these days has become the norm with B.R.E.A.M. series comps targeting these species by lure only means.</p>
+        </div>
       </div>
-
-      <figure class="oval">
-        <div class="frame"><img src="assets/img/eddie.gif" width="250" height="176" alt="Eddie Studman holding a fish"></div>
-        <figcaption>Eddie Studman</figcaption>
-      </figure>
 
       <blockquote class="pull">
         <p>“Painting gave me an insight into colour schemes, helping me design appropriate attracting patterns for different species of fish.”</p>
         <cite>Eddie was a self-employed painter and decorator</cite>
       </blockquote>
 
-      <figure class="oval">
-        <div class="frame"><img src="assets/img/mangrove-jack.gif" width="287" height="200" alt="Mangrove Jack with a Koolabung lure in its mouth"></div>
-        <figcaption>Mangrove Jack caught with a Koolabung Lure</figcaption>
-      </figure>
-
-      <div>
-        <p>After designing and making lures for mates and myself which worked rather well, plus saved me a few bucks, I decided to try and make some saleable products and break into the cottage lure industry.</p>
-        <p>It wasn't long before I was in full time production, with the demand for my lures keeping me more away from my passion of fishing.</p>
+      <div class="pair flip">
+        <figure class="oval">
+          <div class="frame"><img src="assets/img/mangrove-jack.gif" width="287" height="200" alt="Mangrove Jack with a Koolabung lure in its mouth"></div>
+          <figcaption>Mangrove Jack caught with a Koolabung Lure</figcaption>
+        </figure>
+        <div class="text">
+          <p>After designing and making lures for mates and myself which worked rather well, plus saved me a few bucks, I decided to try and make some saleable products and break into the cottage lure industry.</p>
+          <p>It wasn't long before I was in full time production, with the demand for my lures keeping me more away from my passion of fishing.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -126,6 +129,17 @@
     <p>Hand-crafted by Eddie Studman in Port Macquarie, NSW</p>
   </div>
 </footer>
+
+<script>
+  const header = document.querySelector('.site-header');
+  const toggle = header.querySelector('.menu-toggle');
+  const setOpen = open => {
+    header.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+  };
+  toggle.addEventListener('click', () => setOpen(!header.classList.contains('open')));
+  header.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+</script>
 
 </body>
 </html>
