@@ -275,7 +275,17 @@ h1 em, h2 em { color: var(--red); }
 
 .site-footer h2 { margin: 0 0 0.75rem; font-size: 1.75rem; }
 
-.site-footer address { font-style: normal; }
+.fb {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  border-radius: 999px;
+  background: var(--purple);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.fb:hover { background: var(--purple-deep); color: #fff; }
 
 .tagline {
   margin: 0;
