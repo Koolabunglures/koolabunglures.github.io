@@ -258,6 +258,19 @@ h1 em, h2 em { color: var(--red); }
   color: var(--ink-soft);
 }
 
+/* Where to find */
+
+.find {
+  padding-block: 5rem;
+  background: #fff;
+  border-top: 1px solid var(--cream-deep);
+  text-align: center;
+}
+
+.find h2 { margin: 0 0 1.5rem; font-size: clamp(2rem, 4vw, 3rem); }
+
+.find p { margin: 0 auto 1.25rem; max-width: var(--measure); }
+
 /* Footer */
 
 .site-footer {
@@ -268,14 +281,12 @@ h1 em, h2 em { color: var(--red); }
 .site-footer .wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: end;
   gap: 2rem;
 }
 
-.site-footer h2 { margin: 0 0 0.75rem; font-size: 1.75rem; }
 
-.note { margin: 0 0 0.75rem; max-width: var(--measure); }
 
 .fb {
   display: inline-block;
