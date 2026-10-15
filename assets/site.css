@@ -264,12 +264,11 @@ h1 em, h2 em { color: var(--red); }
   padding-block: 5rem;
   background: #fff;
   border-top: 1px solid var(--cream-deep);
-  text-align: center;
 }
 
 .find h2 { margin: 0 0 1.5rem; font-size: clamp(2rem, 4vw, 3rem); }
 
-.find p { margin: 0 auto 1.25rem; max-width: var(--measure); }
+.find p { margin: 0 0 1.25rem; max-width: var(--measure); }
 
 /* Footer */
 
