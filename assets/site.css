@@ -10,6 +10,7 @@
   --display: "Fraunces", Georgia, serif;
   --body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
   --measure: 34rem;
+  --logo: 18rem;
 }
 
 * { box-sizing: border-box; }
@@ -47,7 +48,7 @@ a:hover { color: var(--purple); }
   gap: 1rem;
 }
 
-.site-header img { width: 13rem; }
+.site-header img { width: var(--logo); }
 
 .site-header nav {
   display: flex;
@@ -291,7 +292,7 @@ h1 em, h2 em { color: var(--red); }
   gap: 1rem 2rem;
 }
 
-.site-footer img { width: 9rem; }
+.site-footer img { width: var(--logo); }
 
 .fb {
   display: inline-block;
@@ -314,5 +315,5 @@ h1 em, h2 em { color: var(--red); }
   .hero { padding-top: 1rem; }
   .hero .oval { max-width: 28rem; justify-self: center; grid-row: 1; }
   .site-header nav { display: none; }
-  .site-header img { width: 11rem; }
+  :root { --logo: 13rem; }
 }
